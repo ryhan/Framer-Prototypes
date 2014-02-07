@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+
+		<meta name="viewport" content="initial-scale=1, user-scalable=no">
+
+		<style type="text/css" media="screen">
+
+		* {
+			margin:0;
+			padding:0;
+			border:none;
+			-webkit-user-select:none;
+		}
+
+		body {
+			background: black url('checker-pattern.png')
+				repeat scroll top left;
+			font: 28px/1em "Helvetica";
+			color: #FFF;
+			-webkit-tap-highlight-color: rgba(0,0,0,0)
+		}
+
+		a {
+			color: #bfbfbf;
+		}
+
+
+		.phone{
+			position: fixed;
+			top: 100px;
+			left: 100px;
+			width: 320px;
+			height: 480px;
+			background-color: #000;
+			border: 5px solid white;
+			border-radius: 10px;
+		}
+
+		#1{
+			transform-origin:0% 0%;
+			-webkit-transform-origin: 50% 50%;
+			cursor: pointer;
+			transition: all 0.1s linear;
+			-webkit-transition: all 0.1s linear;
+		}
+
+		</style>
+
+	</head>
+	<body>
+		<script src="framer.js"></script>
+		<script src="app.js"></script>
+		<div class="phone"></div>
+	</body>
+</html>
